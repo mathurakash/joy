@@ -53,43 +53,117 @@
 <script src="js/jquery-plugin-collection.js"></script>
 <!-- JS | jquery plugin collection -->
 <script src="js/jquery-plugin-collection.js"></script>
-<!-- Revolution Slider 5.x SCRIPTS -->
-<script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
-<script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-<!-- fa-icon cdn-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!-- Swiper CSS -->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.tab-content {
-    padding: 15px;
-    border: none;
+
+.main_content{
+    position: relative;
+    color:#064e69;
+    margin-top: 17%;
+    margin-left: 17%;
+    font-size: 70px;
 }
-.checked {
-  color: orange;
+.sub_content{
+    position: relative;
+    color: #064e69;
+    margin-top: 0%;
+    margin-left: 18%;
+    font-size: 22px;
 }
-.read_more {
-  border:1px solid black;
+.menuzord-menu > li > a {
+    padding: 26px 16px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    outline: 0;
+    line-height: 1.42857143;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    color: #0c9ea5;
 }
 
-.read_more :hover,.read_more :focus-visible{
-  font-weight: bold;
-  background-color: gray;
+.menuzord-menu > li.active > a, .menuzord-menu > li:hover > a {
+    background: none !important;
+    color: #0c9ea5 !important;
+    text-decoration: underline;
+}
+.menuzord-menu > li > a .active{
+    color: #0c9ea5;
+    text-decoration: underline;
 }
 
-.read_more :active {
-  background: var(--color);
-  color: #fff;
+.menuzord-brand {
+    margin: 18px 30px 0 0;
+    float: left;
+    color: #666;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+    margin-left: 8% !important;
 }
 
+.menuzord {
+    width: 100%;
+    padding: 0 30px;
+    float: left;
+    position: relative;
+    background: rgba(240,240,240,0.8);
+}
+#home_image{
+    background-image: url(images/contact/contact-us-main-page.png);
+    height: 667px;
+}
+.bottom_right{
+    float: right;
+}
+@media (max-width: 900px){
+.menuzord-responsive .menuzord-menu > li {
+    height: 42px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.main_content {
+    position: relative;
+    color: #064e69;
+    margin-top: 34%;
+    margin-left: 17%;
+    font-size: 45px;
+}
+.sub_content {
+    position: relative;
+    color: #064e69;
+    margin-top: 0%;
+    margin-left: 25%;
+    font-size: 22px;
+}
+#home_image{
+    background-image: url(images/contact/contact-us-main-page.png);
+    height: 410px;
+}
+.divider .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.bottom_right{
+    float: none !important;
+}
+.fa_arrow{
+    display: none;
+}
+}
+@media (max-width: 1199px)
+{.p-md-5 {
+    margin-top: 305px;
+    padding: 5px !important;
+}
+}
 .login {
   align-items: center;
   font-family: inherit;
@@ -107,24 +181,16 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-top: 10px;
 }
 
 .login:hover {
   border:2px solid #0c9ea5;
   background-color: white;
   color :#0c9ea5;
-  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
 }
 
-.login:active {
-  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
-}
-.nav-tabs > li {
-    float: left;
-    margin:auto;
-    padding: auto;
-    margin-bottom: -1px;
-}
+
 #footer a,#footer h3, #footer p, #footer h6{
   color:white;
 }
@@ -151,55 +217,14 @@
 #contact_us h5{
     color:#3db5fd;
 }
-.icon_circle .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 97px;
-    border: 2px solid #064e69;
-    background-color: #064e69;
-    color: white;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    text-align: center;
-}
-.contact-wrap{
-    padding: 80px;
-    position: relative;
-    background-color: white;
-    box-shadow: 2px 2px 2px 2px;
-}
+
+
 </style>
 
 </head>
 <body class="">
 <div id="wrapper">
-  <!-- Header -->
-  <header id="header" class="header" style="position: relative;">
-    <div class="header-nav">
-      <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
-        <div class="container-fluid" style="padding: 0px;">
-          <nav id="menuzord-right" class="menuzord blue no-bg"><a class="menuzord-brand pull-left flip mb-15" href="index-mp-layout1.html"><img src="images\logo.PNG" alt=""></a>
-            <ul class="menuzord-menu mt-15">
-              <li class=""><a href="index.html">HOME</a></li>
-              <li class=""><a href="about_us.html">ABOUT US</a></li>
-              <li class=""><a href="#home">OUR SERVICES</a></li>
-              <li class=""><a href="#home">ANDAMAN ISLAND</a></li>
-              <li class=""><a href="#home">TOUR PACKAGES</a></li>
-              <li class=""><a href="#home">WATER SPORTS</a></li>
-              <li class=""><a href="#home">FERRY</a></li>
-              <li class="active"><a href="contact_us.html">CONTACT US</a></li>
-              <li><button class=" btn login">Login</button></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+  
 
   <!-- Start main-content -->
   <div class="main-content"> 
@@ -207,190 +232,31 @@
 
     <!-- Section: home -->
     <section id="home" class="divider" >
-        <div class="container-fluid p-0" style="height: 500px;">
-    
-            <!-- START REVOLUTION SLIDER 5.0.7 -->
-            <div id="rev_slider_home_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery34" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
-            <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-            <div id="rev_slider_home" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-                <ul>
-                <!-- SLIDE 1 -->
-                <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/slide1.jpg" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Make an Impact">
-                    <!-- MAIN IMAGE -->
-                    <img src="images/bg/12450.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                    <!-- LAYER NR. 1 -->
-                    
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
-                    id="slide-1-layer-1" 
-                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                    data-width="full"
-                    data-height="full"
-                    data-whitespace="normal"
-                    data-transform_idle="o:1;"
-                    data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
-                    data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-                    data-start="1000" 
-                    data-basealign="slide" 
-                    data-responsive_offset="on" 
-                    style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);"> 
+        <div  id="home_image">
+            <!-- Header -->
+            <header id="header" class="header" style="position: relative;">
+                <div class="header-nav">
+                <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+                    <div class="container-fluid" style="padding: 0px;">
+                    <nav id="menuzord" class="menuzord blue no-bg"><a class="menuzord-brand pull-left flip mb-15" href="#"><img src="images\logo.PNG" alt=""></a>
+                        <ul class="menuzord-menu mt-15">
+                        <li class=""><a href="index.html">HOME</a></li>
+                        <li class=""><a href="about_us.html">ABOUT US</a></li>
+                        <li class=""><a href="#home">OUR SERVICES</a></li>
+                        <li class=""><a href="#home">ANDAMAN ISLAND</a></li>
+                        <li class=""><a href="#home">TOUR PACKAGES</a></li>
+                        <li class=""><a href="#home">WATER SPORTS</a></li>
+                        <li class=""><a href="#home">FERRY</a></li>
+                        <li class="active"><a href="contact_us.html">CONTACT US</a></li>
+                        <li><button class=" btn login">Login</button></li>
+                        </ul>
+                    </nav>
                     </div>
-                    <!-- LAYER NR. 3 -->
-                    <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
-                    id="slide-1-layer-3" 
-                    data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
-                    data-y="['top','top','top','top']" data-voffset="['150','100','70','90']" 
-                    data-fontsize="['56','46','40','36']"
-                    data-lineheight="['70','60','50','45']"
-                    data-fontweight="['800','700','700','700']"
-                    data-width="['700','650','600','420']"
-                    data-height="none"
-                    data-whitespace="normal"
-                    data-transform_idle="o:1;"
-                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                    data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                    data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-                    data-start="1000" 
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on" 
-                    style="z-index: 6;  color:white; min-width: 600px; max-width: 600px; white-space: normal;">Contact Us
-                    </div>
-                    <!-- LAYER NR. 4 -->
-                    <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
-                    id="slide-1-layer-4" 
-                    data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
-                    data-y="['top','top','top','top']" data-voffset="['230','220','180','180']" 
-                    data-fontsize="['18','18','16','13']"
-                    data-lineheight="['30','30','28','25']"
-                    data-fontweight="['600','600','600','600']"
-                    data-width="['800','650','600','420']"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"
-                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-                    data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                    data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-                    data-start="1000" 
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on" 
-                    style="z-index: 7; white-space: nowrap;  color:white;">Home - Contact Us
-                    </div>
-                    
-                </li>
-    
-                </ul>
-                <div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: rgba(166, 216, 236, 1.00);"></div>
-            </div>
-            </div>
-    
-            <!-- END REVOLUTION SLIDER -->
-            <script type="text/javascript">
-            var tpj=jQuery;         
-            var revapi34;
-            tpj(document).ready(function() {
-                if(tpj("#rev_slider_home").revolution == undefined){
-                revslider_showDoubleJqueryError("#rev_slider_home");
-                }else{
-                revapi34 = tpj("#rev_slider_home").show().revolution({
-                    sliderType:"standard",
-                    jsFileLocation:"js/revolution-slider/js/",
-                    sliderLayout:"fullscreen",
-                    dottedOverlay:"none",
-                    delay:9000,
-                    navigation: {
-                    keyboardNavigation:"on",
-                    keyboard_direction: "horizontal",
-                    mouseScrollNavigation:"off",
-                    onHoverStop:"on",
-                    touch:{
-                        touchenabled:"on",
-                        swipe_threshold: 75,
-                        swipe_min_touches: 1,
-                        swipe_direction: "horizontal",
-                        drag_block_vertical: false
-                    }
-                    ,
-                    arrows: {
-                        style:"zeus",
-                        enable:true,
-                        hide_onmobile:true,
-                        hide_under:600,
-                        hide_onleave:true,
-                        hide_delay:200,
-                        hide_delay_mobile:1200,
-                        tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
-                        left: {
-                        h_align:"left",
-                        v_align:"center",
-                        h_offset:30,
-                        v_offset:0
-                        },
-                        right: {
-                        h_align:"right",
-                        v_align:"center",
-                        h_offset:30,
-                        v_offset:0
-                        }
-                    },
-                    bullets: {
-                        enable:true,
-                        hide_onmobile:true,
-                        hide_under:600,
-                        style:"metis",
-                        hide_onleave:true,
-                        hide_delay:200,
-                        hide_delay_mobile:1200,
-                        direction:"horizontal",
-                        h_align:"center",
-                        v_align:"bottom",
-                        h_offset:0,
-                        v_offset:30,
-                        space:5,
-                        tmp:'<span class="tp-bullet-img-wrap"><span class="tp-bullet-image"></span></span>'
-                    }
-                    },
-                    viewPort: {
-                    enable:true,
-                    outof:"pause",
-                    visible_area:"80%"
-                    },
-                    responsiveLevels:[1240,1024,778,480],
-                    gridwidth:[1240,1024,778,480],
-                    gridheight:[600,550,500,450],
-                    lazyType:"none",
-                    parallax: {
-                    type:"scroll",
-                    origo:"enterpoint",
-                    speed:400,
-                    levels:[5,10,15,20,25,30,35,40,45,50],
-                    },
-                    shadow:0,
-                    spinner:"off",
-                    stopLoop:"off",
-                    stopAfterLoops:-1,
-                    stopAtSlide:-1,
-                    shuffle:"off",
-                    autoHeight:"off",
-                    hideThumbsOnMobile:"off",
-                    hideSliderAtLimit:0,
-                    hideCaptionAtLimit:0,
-                    hideAllCaptionAtLilmit:0,
-                    debugMode:false,
-                    fallbacks: {
-                    simplifyAll:"off",
-                    nextSlideOnWindowFocus:"off",
-                    disableFocusListener:false,
-                    }
-                });
-                }
-            }); /*ready*/
-            </script>
-        <!-- END REVOLUTION SLIDER -->
+                </div>
+                </div>
+            </header>
+            <h1 class="main_content">Contact Us</h1>
+            <h1 class="sub_content">Home -Contact Us</h1>
         </div>
     </section>
 
@@ -402,7 +268,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="icon_circle">
-                                <i class="fa fa-map-marker text-white"></i>
+                                    <img src="images/contact/Address-icon.png" alt="">
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -413,7 +279,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="icon_circle">
-                                <i class="fa fa-mobile text-white"></i>
+                                <img src="images/contact/phone-icon.png" alt="">
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -426,7 +292,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="icon_circle">
-                                <i class="fa fa-envelope text-white" style="font-size: 55px;padding-top: 20px;"></i>
+                                <img src="images/contact/email-icon.png" alt="">
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -438,7 +304,7 @@
 
                 </div>
                 <div class="col-md-6" style="position:relative;margin-top: -300px;">
-                    <div class="contact-wrap w-100 p-md-5 p-4">
+                    <div class="contact-wrap  p-md-5 p-4">
                         <h3 class="mb-4">Call Back Request</h3>
                         <div id="form-message-warning" class="mb-4"></div>
                         <div id="form-message-success" class="mb-4">
@@ -524,25 +390,25 @@
         <div class="col-md-3 col-sm-3">
             <h3>Quick Links</h3>
             <hr>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Home</a> <br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp About Us</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Top Packages</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Terms and Conditions</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Privacy Policy</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Blog</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Contact us</a>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Home</a> <br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp About Us</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Top Packages</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Terms and Conditions</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Privacy Policy</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Blog</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Contact us</a>
         </div>
         <div class="col-md-3 col-sm-3">
             <h3>Top Packages</h3>
             <hr>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp 5 Night 6 Days Tour</a> <br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp 3 Night 4 Days Tour</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp 2 Nights and 3 Days</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Andaman Advanture Vacation package</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Andaman Delight Couple Tour</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Family Tour Package</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Andaman Honeymoon Tour</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Andaman Ltc Tour</a>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp 5 Night 6 Days Tour</a> <br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp 3 Night 4 Days Tour</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp 2 Nights and 3 Days</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Andaman Advanture Vacation package</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Andaman Delight Couple Tour</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Family Tour Package</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Andaman Honeymoon Tour</a><br>
+            <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Andaman Ltc Tour</a>
         </div>
         <div class="col-md-3 col-sm-3">
             <h3>Contact Info</h3>
@@ -562,7 +428,7 @@
         <p>Copyright @2023 Joy Andaman Travels And Holidays. All rights reserved.</p>
     </div>
     <div class="col-md-6 col-sm-6">
-        <div style="float: right;">
+        <div class="bottom_right">
         <a href="">Menu</a> | <a href=""> Gallery</a> | <a href="">Testimonials</a> | <a href="">Blog</a>
     </div>
     </div>

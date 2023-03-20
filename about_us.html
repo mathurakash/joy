@@ -53,361 +53,273 @@
 <script src="js/jquery-plugin-collection.js"></script>
 <!-- JS | jquery plugin collection -->
 <script src="js/jquery-plugin-collection.js"></script>
-<!-- Revolution Slider 5.x SCRIPTS -->
-<script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
-<script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-<!-- fa-icon cdn-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!-- Swiper CSS -->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.tab-content {
-    padding: 15px;
-    border: none;
-}
-.checked {
-  color: orange;
-}
-.read_more {
-  border:1px solid black;
-}
+  .first_sub_content{
+      position: relative;
+      color:#064e69;
+      margin-top: 10%;
+      font-size: 24px;
+  }
+  .main_content{
+      position: relative;
+      color:#064e69;
+      margin-top: 0%;
+      font-size: 70px;
+  }
+  .sub_content{
+      position: relative;
+      color: #064e69;
+      margin-top: 0%;
+      font-size: 20px;
+  }
+  .menuzord-menu > li > a {
+      padding: 26px 16px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      outline: 0;
+      line-height: 1.42857143;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-tap-highlight-color: transparent;
+      color: #0c9ea5;
+  }
+  
+  .menuzord-menu > li.active > a, .menuzord-menu > li:hover > a {
+      background: none !important;
+      color: #0c9ea5 !important;
+      text-decoration: underline;
+  }
+  .menuzord-menu > li > a .active{
+      color: #0c9ea5;
+      text-decoration: underline;
+  }
+  
+  .menuzord-brand {
+      margin: 18px 30px 0 0;
+      float: left;
+      color: #666;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      cursor: pointer;
+      margin-left: 8% !important;
+  }
+  
+  .menuzord {
+      width: 100%;
+      padding: 0 30px;
+      float: left;
+      position: relative;
+      background: rgba(240,240,240,0.8);
+  }
+  #home_image{
+      background-image: url(images/about/About-Banner.jpg);
+      height: 667px;
+  }
+  .bottom_right{
+      float: right;
+  }
 
-.read_more :hover,.read_more :focus-visible{
-  font-weight: bold;
-  background-color: gray;
+  #filter{
+    position: relative;
+    margin-top: -40px;
 }
-
-.read_more :active {
-  background: var(--color);
-  color: #fff;
-}
-
-.login {
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
+#founder_message_text{
   color: white;
-  background: #ad5389;
-  background: #0c9ea5;
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
-  letter-spacing: 0.05em;
-  border-radius: 20em;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  position: relative;
+  margin-left: -815px;
+  margin-top: 251px;
 }
-
-.login:hover {
-  border:2px solid #0c9ea5;
+#founder_message_content{
+    z-index: 1;
+    position: relative;
+    background: white;
+    margin-top: -320px;
+    width: 755px;
+    margin-left: -384px;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 2px;
+}
+.founder_message_content_back{
+  position: relative;
+    background: white;
+    margin-top: -400px;
+    width: 755px;
+    margin-left: -365px;
+    padding: 30px;
+    background: #0c9ea5;
+    height: 425px;
+}
+#mission_vision_heading{
   background-color: white;
-  color :#0c9ea5;
-  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  position: relative;
+
+  padding: 1px 0px 1px 30px;
+  width: 538px;
+  margin-left: 250px;
+  z-index: 2;
+  margin-top: -70px;
+}
+#mission_vision_content{
+  background-color: #0c9ea5;
+  color: white;
+  position: relative;
+  padding: 1px 0px 1px 30px;
+  width: 540px;
+  margin-left: 250px;
+  z-index: 1;
+  margin-top: -5px;
+}
+.card{
+  background-color: #edf5fe;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
 }
 
-.login:active {
-  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
-}
-.nav-tabs > li {
-    float: left;
-    margin:auto;
-    padding: auto;
-    margin-bottom: -1px;
-}
-#footer a,#footer h3, #footer p, #footer h6{
-  color:white;
-}
-
-.section_title{
-  color:#0c9ea5;
-}
-
-.registration-form-box{
-  border: 1px solid black;
-    padding: 9px;
-    border-radius: 5px;
-}
-.tp-rightarrow {
-  display:none;
-}
-.tp-leftarrow {
-  display:none;
-}
-
-</style>
+  @media (max-width: 900px){
+  .menuzord-responsive .menuzord-menu > li {
+      height: 42px;
+      width: 100%;
+      display: block;
+      position: relative;
+  }
+  .main_content {
+      position: relative;
+      color: #064e69;
+      margin-top: 34%;
+      margin-left: 17%;
+      font-size: 45px;
+  }
+  .sub_content {
+      position: relative;
+      color: #064e69;
+      margin-top: 0%;
+      margin-left: 25%;
+      font-size: 22px;
+  }
+  #home_image{
+      background-image: url(images/contact/contact-us-main-page.png);
+      height: 410px;
+  }
+  .divider .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      text-align: center;
+  }
+  .bottom_right{
+      float: none !important;
+  }
+  .fa_arrow{
+      display: none;
+  }
+  }
+  @media (max-width: 1199px)
+  {.p-md-5 {
+      margin-top: 305px;
+      padding: 5px !important;
+  }
+  }
+  .login {
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: #0c9ea5;
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 10px;
+  }
+  
+  .login:hover {
+    border:2px solid #0c9ea5;
+    background-color: white;
+    color :#0c9ea5;
+  }
+  
+  
+  #footer a,#footer h3, #footer p, #footer h6{
+    color:white;
+  }
+  
+  .section_title{
+    color:#0c9ea5;
+  }
+  
+  .registration-form-box{
+    border: 1px solid black;
+      padding: 9px;
+      border-radius: 5px;
+  }
+  .tp-rightarrow {
+    display:none;
+  }
+  .tp-leftarrow {
+    display:none;
+  }
+  
+  #contact_us h4{
+      font-weight: bold;
+  }
+  #contact_us h5{
+      color:#3db5fd;
+  }
+  
+  
+  </style>
 
 </head>
 <body class="">
 <div id="wrapper">
-  <!-- Header -->
-  <header id="header" class="header" style="position: relative;">
-    <div class="header-nav">
-      <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
-        <div class="container-fluid" style="padding: 0px;">
-          <nav id="menuzord-right" class="menuzord blue no-bg"><a class="menuzord-brand pull-left flip mb-15" href="index-mp-layout1.html"><img src="images\logo.PNG" alt=""></a>
-            <ul class="menuzord-menu mt-15">
-              <li class=""><a href="index.html">HOME</a></li>
-              <li class="active"><a href="about_us.html">ABOUT US</a></li>
-              <li class=""><a href="#home">OUR SERVICES</a></li>
-              <li class=""><a href="#home">ANDAMAN ISLAND</a></li>
-              <li class=""><a href="#home">TOUR PACKAGES</a></li>
-              <li class=""><a href="#home">WATER SPORTS</a></li>
-              <li class=""><a href="#home">FERRY</a></li>
-              <li class=""><a href="contact_us.html">CONTACT US</a></li>
-              <li><button class=" btn login">Login</button></li>
-            </ul>
-          </nav>
+      <!-- Section: home -->
+      <section id="home" class="divider" >
+        <div  id="home_image">
+            <!-- Header -->
+            <header id="header" class="header" style="position: relative;">
+                <div class="header-nav">
+                <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+                    <div class="container-fluid" style="padding: 0px;">
+                    <nav id="menuzord" class="menuzord blue no-bg"><a class="menuzord-brand pull-left flip mb-15" href="#"><img src="images\logo.PNG" alt=""></a>
+                        <ul class="menuzord-menu mt-15">
+                        <li class=""><a href="index.html">HOME</a></li>
+                        <li class="active"><a href="about_us.html">ABOUT US</a></li>
+                        <li class=""><a href="#home">OUR SERVICES</a></li>
+                        <li class=""><a href="#home">ANDAMAN ISLAND</a></li>
+                        <li class=""><a href="#home">TOUR PACKAGES</a></li>
+                        <li class=""><a href="#home">WATER SPORTS</a></li>
+                        <li class=""><a href="#home">FERRY</a></li>
+                        <li class=""><a href="contact_us.html">CONTACT US</a></li>
+                        <li><button class=" btn login">Login</button></li>
+                        </ul>
+                    </nav>
+                    </div>
+                </div>
+                </div>
+            </header>
+            <center>
+            <h1 class="first_sub_content">Travel Website</h1>
+            <h1 class="main_content">About Us</h1>
+            <h1 class="sub_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Libero, laudantium possimus aut, vitae consectetur, provident perferendis labore ducimus eum .</h1>
+            <button class=" btn login">LEARN MORE</button>
+          </center>
         </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Start main-content -->
-  <div class="main-content"> 
-
-    <!-- Section: home -->
-    <section id="home" class="divider" >
-      <div class="container-fluid p-0" style="height: 500px;">
-
-        <!-- START REVOLUTION SLIDER 5.0.7 -->
-        <div id="rev_slider_home_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery34" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
-          <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-          <div id="rev_slider_home" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-            <ul>
-<!-- SLIDE 2 -->
-<li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg2.jpg" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Make an Impact">
-    <!-- MAIN IMAGE -->
-    <img src="images/bg/dY3eN1.webp" alt="" data-bgposition="top 30%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-    <!-- LAYERS -->
-    <!-- LAYER NR. 1 -->
-    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
-      id="slide-2-layer-1" 
-      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-      data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-      data-width="full"
-      data-height="full"
-      data-whitespace="normal"
-      data-transform_idle="o:1;"
-      data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
-      data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-      data-start="1000" 
-      data-basealign="slide" 
-      data-responsive_offset="on" 
-      style="z-index: 5;border-color:rgba(0, 0, 0, 1.00);"> 
-    </div>
-    <!-- LAYER NR. 3 -->
-    <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
-      id="slide-2-layer-2" 
-      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-      data-y="['top','top','top','top']" data-voffset="['80','100','70','90']" 
-      data-fontsize="['28','24','24','24']"
-      data-lineheight="['33','30','30','30']"
-      data-fontweight="['600','600','600','600']"
-      data-textalign="['center','center','center','center']"
-      data-width="none"
-      data-height="none"
-      data-whitespace="nowrap"
-      data-transform_idle="o:1;"
-      data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-      data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-      data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-      data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-      data-start="1000" 
-      data-splitin="none" 
-      data-splitout="none" 
-      data-responsive_offset="on" 
-      style="z-index: 7;color:white; white-space: nowrap;">Travel Website
-    </div>
-    <!-- LAYER NR. 2 -->
-    <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
-      id="slide-2-layer-3" 
-      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-      data-y="['top','top','top','top']" data-voffset="['115','135','105','130']" 
-      data-fontsize="['56','46','40','36']"
-      data-lineheight="['70','60','50','45']"
-      data-fontweight="['800','700','700','700']"
-      data-textalign="['center','center','center','center']"
-      data-width="['700','650','600','420']"
-      data-height="none"
-      data-whitespace="normal"
-      data-transform_idle="o:1;"
-      data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-      data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-      data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-      data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-      data-start="1000" 
-      data-splitin="none" 
-      data-splitout="none" 
-      data-responsive_offset="on" 
-      style="z-index: 6;color:white; min-width: 600px; max-width: 600px; white-space: normal;">About Us    </div>
-    <!-- LAYER NR. 4 -->
-    <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
-      id="slide-1-layer-4" 
-      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-      data-y="['top','top','top','top']" data-voffset="['220','260','220','220']" 
-      data-fontsize="['18','18','16','13']"
-      data-lineheight="['30','30','28','25']"
-      data-fontweight="['600','600','600','600']"
-      data-textalign="['center','center','center','center']"
-      data-width="['800','650','600','420']"
-      data-height="none"
-      data-whitespace="nowrap"
-      data-transform_idle="o:1;"
-      data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-      data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-      data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-      data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-      data-start="1000" 
-      data-splitin="none" 
-      data-splitout="none" 
-      data-responsive_offset="on" 
-      style="z-index: 7; color:white; white-space: nowrap;">We provides always our best services for our clients and  always<br> try to achieve our client's trust and satisfaction.
-    </div>
-    <!-- LAYER NR. 5 -->
-    <div class="tp-caption rs-parallaxlevel-0" 
-      id="slide-2-layer-5" 
-      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-      data-y="['top','top','top','top']" data-voffset="['320','340','300','300']" 
-      data-width="none"
-      data-height="none"
-      data-whitespace="nowrap"
-      data-transform_idle="o:1;"
-      data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-      data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-      data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-      data-mask_in="x:0px;y:0px;" 
-      data-mask_out="x:0;y:0;" 
-      data-start="1000" 
-
-      data-splitin="none" 
-      data-splitout="none" 
-      data-responsive_offset="on" 
-      data-responsive="off"
-      style="z-index: 8;color:white; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><a href="#" class="btn login">Learn More</a>
-    </div>
-              </li>
-
-            </ul>
-            <div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: rgba(166, 216, 236, 1.00);"></div>
-          </div>
-        </div>
-
-        <!-- END REVOLUTION SLIDER -->
-        <script type="text/javascript">
-          var tpj=jQuery;         
-          var revapi34;
-          tpj(document).ready(function() {
-            if(tpj("#rev_slider_home").revolution == undefined){
-              revslider_showDoubleJqueryError("#rev_slider_home");
-            }else{
-              revapi34 = tpj("#rev_slider_home").show().revolution({
-                sliderType:"standard",
-                jsFileLocation:"js/revolution-slider/js/",
-                sliderLayout:"fullscreen",
-                dottedOverlay:"none",
-                delay:9000,
-                navigation: {
-                  keyboardNavigation:"on",
-                  keyboard_direction: "horizontal",
-                  mouseScrollNavigation:"off",
-                  onHoverStop:"on",
-                  touch:{
-                    touchenabled:"on",
-                    swipe_threshold: 75,
-                    swipe_min_touches: 1,
-                    swipe_direction: "horizontal",
-                    drag_block_vertical: false
-                  }
-                  ,
-                  arrows: {
-                    style:"zeus",
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    hide_onleave:true,
-                    hide_delay:200,
-                    hide_delay_mobile:1200,
-                    tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
-                    left: {
-                      h_align:"left",
-                      v_align:"center",
-                      h_offset:30,
-                      v_offset:0
-                    },
-                    right: {
-                      h_align:"right",
-                      v_align:"center",
-                      h_offset:30,
-                      v_offset:0
-                    }
-                  },
-                  bullets: {
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    style:"metis",
-                    hide_onleave:true,
-                    hide_delay:200,
-                    hide_delay_mobile:1200,
-                    direction:"horizontal",
-                    h_align:"center",
-                    v_align:"bottom",
-                    h_offset:0,
-                    v_offset:30,
-                    space:5,
-                    tmp:'<span class="tp-bullet-img-wrap"><span class="tp-bullet-image"></span></span>'
-                  }
-                },
-                viewPort: {
-                  enable:true,
-                  outof:"pause",
-                  visible_area:"80%"
-                },
-                responsiveLevels:[1240,1024,778,480],
-                gridwidth:[1240,1024,778,480],
-                gridheight:[600,550,500,450],
-                lazyType:"none",
-                parallax: {
-                  type:"scroll",
-                  origo:"enterpoint",
-                  speed:400,
-                  levels:[5,10,15,20,25,30,35,40,45,50],
-                },
-                shadow:0,
-                spinner:"off",
-                stopLoop:"off",
-                stopAfterLoops:-1,
-                stopAtSlide:-1,
-                shuffle:"off",
-                autoHeight:"off",
-                hideThumbsOnMobile:"off",
-                hideSliderAtLimit:0,
-                hideCaptionAtLimit:0,
-                hideAllCaptionAtLilmit:0,
-                debugMode:false,
-                fallbacks: {
-                  simplifyAll:"off",
-                  nextSlideOnWindowFocus:"off",
-                  disableFocusListener:false,
-                }
-              });
-            }
-          }); /*ready*/
-        </script>
-      <!-- END REVOLUTION SLIDER -->
-      </div>
     </section>
+
+  
     <!-- Section: Filter -->
     <Section id = "filter"class="divider">
         <div class="home-center">
@@ -481,6 +393,131 @@
       </div>
       </Section>
 
+    <!-- Section: Who We Are -->
+    <section id = "who_we_are"class="divider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <img src="images/about/About.png" alt="">
+          </div>
+          <div class="col-md-6 col-sm-6">
+              <h6 class="section_title"><hr> ABOUT JOY ANDAMAN TRAVELS & HOLIDAY</h6>
+              <h3>Lorem Lpsum is simply dummy text of the printing</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptas doloremque alias blanditiis id molestias debitis non pariatur maxime velit ducimus, mollitia temporibus enim explicabo corporis minus laborum quasi vitae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, expedita repudiandae libero accusamus reprehenderit porro! Atque dignissimos voluptatem praesentium explicabo cumque quisquam dolore, nesciunt adipisci consequatur saepe veritatis, alias iusto?. <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. A temporibus quae iure quia, magni fugiat molestias at aliquam tenetur, beatae voluptas vitae impedit eos, officia sit alias! Doloribus, temporibus ipsam! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ad animi quos fugiat iusto ut minima! Aspernatur ut veritatis dolore officia eos ullam itaque laboriosam obcaecati! Aut et accusamus voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, beatae deserunt. Quaerat perferendis necessitatibus explicabo repellat! Nam perferendis error totam repellat dolorem tenetur! Itaque libero consequatur amet tempore architecto repellendus.</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Founder Message -->
+    <section id = "founder_message"class="divider">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <img src="images/about/founder-message.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-4" >
+            <div> <h1 id="founder_message_text">" Founder <br> Message"</h1></div>
+            <div id="founder_message_content">
+              <h3 class="section_title"> ABOUT JOY ANDAMAN TRAVELS & HOLIDAY</h3>
+              <h5>Evalution of Joy Andaman Travels is a story that streaches back to my childhood. 
+                My father and i used to travel toghether to enjoy our vacations a lot. 
+                It will be quite adventurous and fun. I love visiting new people on my 
+                travel to get quite an experience, even from my chieldhood.</h5>
+                <h5>
+                  After my university studies and travels through India, Europe and the USA, I started working with
+                  my father. I was a pioneer in B2B & B2C and started a travel agency. I want you to get a wonderful experience on your travel, so Joy Andaman Travels gives you the best packages suitable for you.
+                </h5>
+                <h5>
+                  We know the journey will continue as intriguing as the people travel with us. Our team
+                  looks forward to becoming part of your travel experience as well.
+                  <br>
+                  Let the adeventure begin!
+                  <br>Best regards,
+                </h5>
+                <h3>- Mr. Sujoy Biswas</h3>
+            </div>
+            <div class="founder_message_content_back"></div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <!-- Section: Founder Message -->
+    <section id = "mission_vision"class="divider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div id="mission_vision_heading"><h3> Mission and Vision : </h3></div>
+            <div id="mission_vision_content"><h5>
+              Our mission is to serve the tourist who are looking to enjoy their time in Andaman & Nicobar Island.
+              We provide touristic services of quality and are especially commited to social,cultural as well as environmental reality. We provide you with a nice and satisfied tour with certified guides.
+            </h5>
+            <h5>
+              Being part of the exclusive tourism sector in India, we contribute to making the development of our country. 
+              Our vision is to build a good network with travelers even from the farthest part of the world.
+            </h5>
+          </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <img src="images/about/Mission-Viseon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Our team -->
+    <section id = "our_team"class="divider">
+      
+        <div class="container">
+          <center>
+            <h6>Our Team</h6>
+            <h3>Meet Our Team</h3>
+          </center>
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <div class="card" style="width: 16rem;">
+                <img class="card-img-top" src="images/about/our-team-1.png" style="height: 175px;" alt="Card image cap">
+                <div class="card-body">
+                  <i class="fa fa-user-circle-o text-theme-colored"></i> &nbsp John Carter
+                  <i class="fa fa-message-o text-theme-colored"></i> &nbspJohn Carter
+                  <h5 class="card-title">LOre Ipsum is simply dummy text the industry.</h5>
+                  <a href="#" class="btn read_more">Ream More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="card" style="width: 16rem;">
+                <img class="card-img-top" src="images/about/our-team-2.png" style="height: 175px;" alt="Card image cap">
+                <div class="card-body">
+                  <i class="fa fa-user-circle-o text-theme-colored"></i> &nbsp John Carter
+                  <i class="fa fa-message-o text-theme-colored"></i> &nbspJohn Carter
+                  <h5 class="card-title">LOre Ipsum is simply dummy text the industry.</h5>
+                  <a href="#" class="btn read_more">Ream More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="card" style="width: 16rem;">
+                <img class="card-img-top" src="images/about/our-team-3.png" style="height: 175px;" alt="Card image cap">
+                <div class="card-body">
+                  <i class="fa fa-user-circle-o text-theme-colored"></i> &nbsp John Carter
+                  <i class="fa fa-message-o text-theme-colored"></i> &nbspJohn Carter
+                  <h5 class="card-title">LOre Ipsum is simply dummy text the industry.</h5>
+                  <a href="#" class="btn read_more">Ream More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
 
 
     <!-- Section:  why choose is-->
@@ -531,128 +568,128 @@
           </div>
         </div>
           <div class="col-md-3 col-sm-3">
-            <img src="images/section/why_us.PNG" alt="" style="border: 4px solid white;box-shadow: 2px 2px 2px 2px;position: relative;margin-top: -275px;height: 600px;">
+            <img src="images/home/Why-choose-us-big-image.png" alt="" style="border: 4px solid white;box-shadow: 2px 2px 2px 2px;position: relative;margin-top: -275px;height: 600px;">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section:  Blog Section-->
-    <section id="blog" class="divider" >
+
+    <!-- Section: Blog Section -->
+    <section id = "blog"class="divider">
+      
       <div class="container">
+        <center>
+          <h6>THE BLOG</h6>
+          <h3>Read Our Latest Articles</h3>
+        </center>
         <div class="row">
-          <center>
-            <h6>THE BLOG</h6>
-            <h3>Read Our Latest Articles</h3>
-          
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="images/section/download.jpg" style="height: 175px;" alt="Card image cap">
+          <div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 16rem;">
+              <img class="card-img-top" src="images/home/Blog-image-1.jpg" style="height: 175px;" alt="Card image cap">
               <div class="card-body">
                 <i class="fa fa-user-circle-o text-theme-colored"></i> &nbsp John Carter
                 <i class="fa fa-message-o text-theme-colored"></i> &nbspJohn Carter
-                <h5 class="card-title">LOre Ipsum is simply dummy text the industry.</h5>
+                <h4 class="card-title">LOre Ipsum is simply dummy text the industry.</h4>
                 <a href="#" class="btn read_more">Ream More</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="images/section/download.jpg" style="height: 175px;" alt="Card image cap">
+          <div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 16rem;">
+              <img class="card-img-top" src="images/home/Blog2.jpg" style="height: 175px;" alt="Card image cap">
               <div class="card-body">
                 <i class="fa fa-user-circle-o text-theme-colored"></i> &nbsp John Carter
-                <i class="fa fa-message text-theme-colored"></i> &nbspJohn Carter
-                <h5 class="card-title">LOre Ipsum is simply dummy text the industry.</h5>
+                <i class="fa fa-message-o text-theme-colored"></i> &nbspJohn Carter
+                <h4 class="card-title">LOre Ipsum is simply dummy text the industry.</h4>
                 <a href="#" class="btn read_more">Ream More</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="images/section/download.jpg" style="height: 175px;" alt="Card image cap">
+          <div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 16rem;">
+              <img class="card-img-top" src="images/home/Untitled-3.jpg" style="height: 175px;" alt="Card image cap">
               <div class="card-body">
                 <i class="fa fa-user-circle-o text-theme-colored"></i> &nbsp John Carter
-                <i class="fa fa-message text-theme-colored"></i> &nbspJohn Carter
-                <h5 class="card-title">LOre Ipsum is simply dummy text the industry.</h5>
+                <i class="fa fa-message-o text-theme-colored"></i> &nbspJohn Carter
+                <h4 class="card-title">Lore Ipsum is simply dummy text the industry.</h4>
                 <a href="#" class="btn read_more">Ream More</a>
               </div>
             </div>
           </div>
-        </center>
         </div>
       </div>
-    </section>
+    
+  </section>
 
     <!-- Section:  Footer Section-->
     <section id="footer" class="divider" style="background-color:#222933; padding-bottom:0px;">
-      
-
-        <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-3">
-            <img src="images\logo.PNG" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, laborum nemo. Ullam, quam? Optio asperiores tempore perspiciatis ducimus quod ab quidem laboriosam reprehenderit similique quisquam quaerat, deleniti necessitatibus, natus molestias?</p>
-            <h6>Follow Us On</h6>
-            
-              <ul class="styled-icons icon-dark icon-circled icon-theme-colored icon-sm flip sm-pull-none sm-text-center mt-5">
-                <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
-              </ul>
-            
-          </div>
-          <div class="col-md-3 col-sm-3">
-            <h3>Quick Links</h3>
-            <hr>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Home</a> <br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp About Us</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Top Packages</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Terms and Conditions</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Privacy Policy</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Blog</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Contact us</a>
-          </div>
-          <div class="col-md-3 col-sm-3">
-            <h3>Top Packages</h3>
-            <hr>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp 5 Night 6 Days Tour</a> <br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp 3 Night 4 Days Tour</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp 2 Nights and 3 Days</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Andaman Advanture Vacation package</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Andaman Delight Couple Tour</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Family Tour Package</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Andaman Honeymoon Tour</a><br>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="">&nbsp Andaman Ltc Tour</a>
-          </div>
-          <div class="col-md-3 col-sm-3">
-            <h3>Contact Info</h3>
-            <hr>
-            <h6><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Address : Joy Andaman Traavels Pvt. Ltd. 2022. Chouldari bacchra pahar opposite road to imfc canteen portblair Andaman Nicobar 744103</h6>
-            <h6>Booking Support: +91-9474293331 <br>
-            Email: info@joyandamantravels.com <br>
-            Timing: Monday - Saturday :10AM TO 7 PM IST</h6>
-             <h6><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="">&nbsp joyandamantravels@gmail.com</a> <br></h6> 
-             <h6><i class="fa fa-mobile" aria-hidden="true"></i><a href="">&nbsp +91-9933218715, +91-9474293331</a> <br></h6> 
-          </div>
-        </div>
-      
-<hr>
+      <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-6">
-        <p>Copyright @2023 Joy Andaman Travels And Holidays. All rights reserved.</p>
+      <div class="col-md-3 col-sm-3">
+          <img src="images\logo.PNG" alt="">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, laborum nemo. Ullam, quam? Optio asperiores tempore perspiciatis ducimus quod ab quidem laboriosam reprehenderit similique quisquam quaerat, deleniti necessitatibus, natus molestias?</p>
+          <h6>Follow Us On</h6>
+          
+          <ul class="styled-icons icon-dark icon-circled icon-theme-colored icon-sm flip sm-pull-none sm-text-center mt-5">
+              <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+          </ul>
+          
       </div>
+      <div class="col-md-3 col-sm-3">
+          <h3>Quick Links</h3>
+          <hr>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Home</a> <br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp About Us</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Top Packages</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Terms and Conditions</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Privacy Policy</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Blog</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Contact us</a>
+      </div>
+      <div class="col-md-3 col-sm-3">
+          <h3>Top Packages</h3>
+          <hr>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp 5 Night 6 Days Tour</a> <br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp 3 Night 4 Days Tour</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp 2 Nights and 3 Days</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Andaman Advanture Vacation package</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Andaman Delight Couple Tour</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Family Tour Package</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Andaman Honeymoon Tour</a><br>
+          <i class="fa fa-arrow-right fa_arrow" aria-hidden="true"></i><a href="">&nbsp Andaman Ltc Tour</a>
+      </div>
+      <div class="col-md-3 col-sm-3">
+          <h3>Contact Info</h3>
+          <hr>
+          <h6><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Address : Joy Andaman Traavels Pvt. Ltd. 2022. Chouldari bacchra pahar opposite road to imfc canteen portblair Andaman Nicobar 744103</h6>
+          <h6>Booking Support: +91-9474293331 <br>
+          Email: info@joyandamantravels.com <br>
+          Timing: Monday - Saturday :10AM TO 7 PM IST</h6>
+          <h6><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="">&nbsp joyandamantravels@gmail.com</a> <br></h6> 
+          <h6><i class="fa fa-mobile" aria-hidden="true"></i><a href="">&nbsp +91-9933218715, +91-9474293331</a> <br></h6> 
+      </div>
+      </div>
+  
+  <hr>
+  <div class="row">
       <div class="col-md-6 col-sm-6">
-        <div style="float: right;">
-        <a href="">Menu</a> | <a href=""> Gallery</a> | <a href="">Testimonials</a> | <a href="">Blog</a>
-      </div>
-      </div>
-      </div>
+      <p>Copyright @2023 Joy Andaman Travels And Holidays. All rights reserved.</p>
+  </div>
+  <div class="col-md-6 col-sm-6">
+      <div class="bottom_right">
+      <a href="">Menu</a> | <a href=""> Gallery</a> | <a href="">Testimonials</a> | <a href="">Blog</a>
+  </div>
+  </div>
+  </div>
 
-    </div>
-     
-    </section>
+  </div>
+  
+  </section>
     
   </div>
 
